@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="./resources/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>JS Documentation</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#What_is_JavaScript">What is JavaScript</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+            <li><a class="nav-link" href='#A_"Hello_world!"_Example'>A "Hello world!" Example</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Comments">Comments</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Events">Events</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="What_is_JavaScript" class="main-section">
+            <header>
+                <h2>What is JavaScript</h2>
+            </header>
+            <article>
+                <p>
+                    JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies
+                    of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the
+                    client side for webpage behavior, often incorporating third-party libraries. All major web
+                    browsers have a dedicated JavaScript engine to execute the code on users' devices.
+                </p>
+                <p>
+                    JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript
+                    standard. It has dynamic typing, prototype-based object-orientation, and first-class functions.
+                    It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has
+                    application programming interfaces (APIs) for working with text, dates, regular expressions,
+                    standard data structures, and the Document Object Model (DOM).
+                </p>
+                <p>
+                    The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or
+                    graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs
+                    for I/O.
+                </p>
+                <p>
+                    JavaScript engines were originally used only in web browsers, but are now core components of some
+                    servers and a variety of applications. The most popular runtime system for this usage is Node.js.
+                </p>
+                <p>
+                    Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two
+                    languages are distinct and differ greatly in design.
+                </p>
+            </article>
+        </section>
+
+        <section id="What_you_should_already_know" class="main-section">
+            <header>
+                <h2>What you should already know</h2>
+            </header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on
+                        the main page about JavaScript.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="JavaScript_and_Java" class="main-section">
+            <header>
+                <h2>JavaScript and Java</h2>
+            </header>
+            <article>
+                <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
+                    JavaScript language resembles Java but does not have Java's static typing and strong type checking.
+                    JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs
+                    which was the reason why it was renamed from LiveScript to JavaScript.</p>
+                <p>
+                    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a
+                    runtime system based on a small number of data types representing numeric, Boolean, and string
+                    values. JavaScript has a prototype-based object model instead of the more common class-based object
+                    model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary
+                    for individual objects. JavaScript also supports functions without any special declarative
+                    requirements. Functions can be properties of objects, executing as loosely typed methods.
+                </p>
+                <p>
+                    JavaScript is a very free-form language compared to Java. You do not have to declare all variables,
+                    classes, and methods. You do not have to be concerned with whether methods are public, private, or
+                    protected, and you do not have to implement interfaces. Variables, parameters, and function return
+                    types are not explicitly typed.
+                </p>
+            </article>
+        </section>
+
+        <section id='A_"Hello_world!"_Example' class="main-section">
+            <header>
+                <h2>
+                    A "Hello world!" Example
+                </h2>
+            </header>
+            <article>
+                <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your
+                    websites will enter a new dimension of power and creativity.</p>
+                <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML
+                    and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add
+                    JavaScript to your page for creating a Hello world! example.</p>
+                <ol>
+                    <li>
+                        Go to your test site and create a new folder named <code>scripts</code>. Within the scripts
+                        folder, create a new text document called <code>main.js</code>, and save it.
+                    </li>
+                    <li>In your <code>index.html</code> file, enter this code on a new line, just before the closing
+                        <code>&lt;body&gt;</code> tag: <code>&lt;script&gt; src="scripts/main.js">&lt;/script&gt;</code>
+                    </li>
+                    <li>This is doing the same job as the <code>&lt;link&gt;</code>
+                        element for CSS. It applies the JavaScript to the page, so it can have an effect on
+                        the
+                        HTML (along with the CSS, and anything else on the page).
+                    </li>
+                    <li>Add this code to the <code>main.js</code> file: <code>const myHeading = document.querySelector("h1");
+                        myHeading.textContent = "Hello world!";</code></li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header>
+                <h2>Variables</h2>
+            </header>
+            <article>
+                <p>Variables are containers that store values. You start by declaring a variable with the let keyword,
+                    followed by the name you give to the variable: <br>
+                    <code>let myVariable;</code>
+                </p>
+
+                <p>
+                    A semicolon at the end of a line indicates where a statement ends. It is only required when you need
+                    to separate statements on a single line. However, some people believe it's good practice to have
+                    semicolons at the end of each statement. There are other rules for when you should and shouldn't use
+                    semicolons.
+                </p>
+                <p>
+                    You can name a variable nearly anything, but there are some restrictions. (See this section about
+                    naming rules.) If you are unsure, you can check your variable name to see if it's valid.
+                </p>
+                <p>JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have
+                    problems in your code, check the case! </p>
+                <p> After declaring a variable, you can give it a value: <br>
+                    <code>myVariable = "Bob";</code> <br>
+                    Also, you can do both these operations on the same line: <br>
+                    <code>let myVariable = "Bob";</code> <br>
+                    You retrieve the value by calling the variable name: <br>
+                    <code>myVariable;</code> <br>
+                    After assigning a value to a variable, you can change it later in the code: <br>
+                    <code>
+                        let myVariable = "Bob"; <br>
+                        myVariable = "Steve";
+                    </code>
+                </p>
+            </article>
+        </section>
+
+        <section id="Comments" class="main-section">
+            <header>
+                <h2>Comments</h2>
+            </header>
+            <article>
+                <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as
+                    comments. You can write comments in JavaScript just as you can in CSS: <br>
+                    <code>/* <br>
+                        Everything in between is a comment. <br>
+                        */</code>
+
+                </p>
+                <p>
+                    If your comment contains no line breaks, it's an option to put it behind two slashes like this: <br>
+                    <code>// This is a comment</code>
+                </p>
+            </article>
+
+        </section>
+
+        <section id="Operators" class="main-section">
+            <header>
+                <h2>Operators</h2>
+            </header>
+            <article>
+                <p>An operator is a mathematical symbol that produces a result based on two values (or variables). In
+                    the following table, you can see some of the simplest operators, along with some examples to try in
+                    the JavaScript console.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Explanation</th>
+                            <th>Symbol(s)</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Addition</th>
+                            <td> Add two numbers together or combine two strings.</td>
+                            <td><code>+</code></td>
+                            <td><code>6 + 9; </code>
+                                <code>'Hello ' + 'world!';</code>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Subtraction, Multiplication, Division</th>
+                            <td>These do what you'd expect them to do in basic math.</td>
+                            <td><code>-, *, /</code></td>
+                            <td><code>9 - 3;</code>
+                                <code>8 * 2; // multiply in JS is an asterisk</code><code>9 / 3;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Assignment</th>
+                            <td>As you've seen already: this assigns a value to a variable.</td>
+                            <td><code>=</code></td>
+                            <td><code>	let myVariable = 'Bob';</code></td>
+                        </tr>
+
+                        <tr>
+                            <th>Strict equality</th>
+                            <td>This performs a test to see if two values are equal and of the same data type. It
+                                returns a <code>true/false</code> (Boolean) result.</td>
+                            <td><code>===</code></td>
+                            <td><code>let myVariable = 3;</code><code>myVariable === 4;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="Functions" class="main-section">
+            <header>
+                <h2>Functions</h2>
+            </header>
+            <article>
+                <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body
+                    of code as a function that executes when you call the function name in your code. This is a good
+                    alternative to repeatedly writing the same code. You have already seen some uses of functions. For
+                    example: <br>
+                    <code>let myVariable = document.querySelector("h1");</code> <br>
+                    <code>alert("hello!");</code>
+                </p>
+                <p>
+                    These functions, <code>document.querySelector</code> and <code>alert</code>, are built into the
+                    browser.
+                </p>
+                <p>
+                    You can also define your own functions. In the next example, we create a simple function which takes
+                    two numbers as arguments and multiplies them: <br> <code>
+                        function multiply(num1, num2) { <br>
+                            let result = num1 * num2; <br>
+                            return result; <br>
+                          }
+                    </code>
+                </p>
+            </article>
+        </section>
+
+        <section id="Events" class="main-section">
+            <header>
+                <h2>Events</h2>
+            </header>
+            <article>
+                <p>
+                    Real interactivity on a website requires event handlers. These are code structures that listen for
+                    activity in the browser, and run code in response. The most obvious example is handling the click
+                    event, which is fired by the browser when you click on something with your mouse. To demonstrate
+                    this, enter the following into your console, then click on the current webpage: <br>
+                    <code>
+                        document.querySelector("html").addEventListener("click", function () { <br>
+                            alert("Ouch! Stop poking me!"); <br>
+                          });
+                    </code>
+                </p>
+                <p>
+                    There are a number of ways to attach an event handler to an element. Here we select the
+                    <code>&lt;html&gt;</code>
+                    element. We then call its <code>addEventListener()</code> function, passing in the name of the event
+                    to listen to
+                    (<code>'click'</code>) and a function to run when the event happens.
+                </p>
+            </article>
+        </section>
+
+        <section id="Data_types" class="main-section">
+            <header>
+                <h2>Data types</h2>
+            </header>
+            <article>
+                <p>Programming languages all have built-in data structures, but these often differ from one language to
+                    another. JavaScript has 8 Datatypes:</p>
+                <ol>
+                    <li>String</li>
+                    <li>Number</li>
+                    <li>Bigint</li>
+                    <li>Boolean</li>
+                    <li>Undefined</li>
+                    <li>Null</li>
+                    <li>Symbol</li>
+                    <li>Object</li>
+                </ol>
+                <p><strong>The Object data type</strong> can contain:</p>
+                <ol>
+                    <li>An object</li>
+                    <li>An array</li>
+                    <li>A date</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header>
+                <h2>Reference</h2>
+            </header>
+            <article>
+                <p>All the documentation is taken from following sites:</p>
+                <ul>
+
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/JavaScript">WIKIPEDIA</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_datatypes.asp">w3school</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 290px;
+    width: 300px;
+    /* height: 100%; */
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+  }
+  
+  #main-doc {
+    margin-left: 300px;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    
+  }
+  
+  #navbar header {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(0, 11, 11, 1);
+  }
+  
+  #navbar li {
+    list-style: none;
+    margin-bottom: 10px;
+    border-top: solid;
+    border-color: rgba(44, 44, 44, 0.4);
+    width: 100%;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: rgb(33, 32, 33);
+    font-size: 1.2rem;
+  }
+  
+  code {
+    background-color: #111;
+    color: #efefef;
+  }
+  
+  @media only screen and (max-width: 875px) {
+  
+    #navbar {
+        background-color: white;
+        position: absolute;
+        height: 275px;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        padding: 0;
+        margin: 0;
+      
+      }
+    #main-doc {
+      position: relative;
+      margin: 10px;
+      margin-top: 275px;
+    }
+  
+    #navbar ul {
+      height: 175px;
+      overflow: scroll;
+      
+    }
+  }
